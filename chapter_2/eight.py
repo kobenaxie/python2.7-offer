@@ -4,6 +4,8 @@
 修改查找旋转数组的最小值，增加了最小值索引位置的需求。
 """
 def min_rotate_array(rotate_array):
+    if not rotate_array:
+        return None, None
     idx_left = 0
     idx_right = len(rotate_array)-1
     idx_mid = 0
